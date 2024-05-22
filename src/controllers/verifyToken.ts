@@ -1,7 +1,7 @@
 import jwt  from 'jsonwebtoken';
-import { AccessTokenDTOSchema } from '@/schemas';
+import { AccessTokenDTOSchema } from '../schemas';
 import { NextFunction, Request, Response } from 'express';
-import prisma from '@/prisma';
+import prisma from '../prisma';
 const verifyToken = async(req:Request, res:Response, next:NextFunction)=>{
     try {
         // validate the request body

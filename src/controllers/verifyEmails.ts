@@ -1,6 +1,6 @@
-import { EMAIL_SERVICE } from '@/config';
-import prisma from '@/prisma';
-import { EmailVerificationSchema } from '@/schemas';
+import { EMAIL_SERVICE } from '../config';
+import prisma from '../prisma';
+import { EmailVerificationSchema } from '../schemas';
 import axios from 'axios';
 import { NextFunction, Request, Response } from 'express';
 const verifyEmail = async(req:Request, res:Response, next:NextFunction)=>{

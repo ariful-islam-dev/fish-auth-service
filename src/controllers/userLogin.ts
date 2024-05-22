@@ -1,6 +1,6 @@
 import  bcrypt  from 'bcryptjs';
-import prisma from '@/prisma';
-import { UserLoginDTOSchema } from '@/schemas';
+import prisma from '../prisma';
+import { UserLoginDTOSchema } from '../schemas';
 import { NextFunction, Request, Response } from 'express';
 import { LoginAttempt } from '@prisma/client';
 import jwt from 'jsonwebtoken';
