@@ -7,7 +7,9 @@
     "dev": "ts-node-dev -r tsconfig-paths/register ./src/index.ts",
     "build": "tsc && tsc-alias",
     "migrate:dev": "prisma migrate dev",
-    "migrate:prod": "prisma migrate deploy"
+    "migrate:prod": "prisma migrate deploy",
+    "start": "ts-node ./src/index.ts",
+    "test": "mocha --require ts-node/register tests/**/*.ts"
   },
   "dependencies": {
     "@prisma/client": "^5.10.2",
